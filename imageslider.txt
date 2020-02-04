@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+    @keyframes slidy {
+        0% { left: 0%; }
+        20% { left: 0%; }
+        25% { left: -100%; }
+        45% { left: -100%; }
+        50% { left: -200%; }
+        70% { left: -200%; }
+        75% { left: -300%; }
+        95% { left: -300%; }
+        100% { left: -400%; }
+    }
+    div.figure { 
+        margin: 0; background: #0e1b36;
+        font-family: Bebas Neue, cursive;
+        font-weight: 100;
+    }
+    div#captioned-gallery { 
+        width: 100%; overflow: hidden; 
+    }
+    div.figure_slider { 
+        position: relative; width: 500%;
+        font-size: 0; animation: 30s slidy infinite; 
+        margin: 0; background: #0e1b36;
+        font-family: Bebas Neue, cursive;
+        font-weight: 100;
+    }
+    div.figure_slider_figure { 
+        width: 20%; height: auto;
+        display: inline-block;  position: inherit;
+        margin: 0; background: #0e1b36;
+        font-family: Bebas Neue, cursive;
+        font-weight: 100;
+    }
+    img.figure_slider_img { width: 100%; height: 920px; }
+    div.figure_slider_figure_figcaption { 
+        position: absolute; bottom: 0;
+        background: rgba(0,0,0,0.4);
+        color: #fff; width: 100%;
+        font-size: 2rem; padding: .6rem;
+        margin: 0; background: #0e1b36;
+        font-family: Bebas Neue, cursive;
+        font-weight: 100;
+    }
+</style>
+<div id="captioned-gallery">
+    <div class="figure_slider">
+        <div class="figure_slider_figure">
+            <img class="figure_slider_img" src="https://myfamilytravels.com/sites/default/files/Moreys-Pier-for-Prep-Talk_1.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=300&amp;w=940" alt="">
+            <div class="figure_slider_figure_figcaption">Avalon, NJ</div>
+        </div>
+        <div class="figure_slider_figure">
+            <img class="figure_slider_img" src="https://live.staticflickr.com/4881/46051982992_6d5ee6e311_b.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=300&amp;w=940" alt="">
+            <div class="figure_slider_figure_figcaption">Wildwood, NJ</div>
+        </div>
+        <div class="figure_slider_figure">
+            <img class="figure_slider_img" src="https://www.hudsonnh.gov/sites/default/files/styles/full_node_primary_extra_wide/public/imageattachments/seniorcenter/page/42439/cape_may.jpg?itok=vzlR74T9?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=300&amp;w=940" alt="">
+            <div class="figure_slider_figure_figcaption">Cape May, NJ</div>
+        </div>
+        <div class="figure_slider_figure">
+            <img class="figure_slider_img" src="https://ap.rdcpix.com/760a1a825903933ec3a44d25a771eb79l-m1134934126xd-w1020_h770_q80.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=300&amp;w=940" alt="">
+            <div class="figure_slider_figure_figcaption">Point Pleasant, NJ</div>
+        </div>
+        <div class="figure_slider_figure">
+            <img class="figure_slider_img" src="https://welcometolbi.com/wp-content/uploads/bfi_thumb/beach-haven04-2v6jofqi1hzf3ybhyb1u4d5s6c6tzgb4q6mqenkitqn20aae2.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=300&amp;w=940" alt="">
+            <div class="figure_slider_figure_figcaption">Long Beach Island, NJ</div>
+        </div>
+    </div>
+</div>
+</html>
